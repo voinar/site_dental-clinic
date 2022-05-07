@@ -1,0 +1,60 @@
+@import 
+
+'./css-reset.scss', // Josh's Custom CSS Reset: https://www.joshwcomeau.com/css/custom-css-reset/
+'./variables.scss', // global style variables
+
+// sections
+'./top-bar-section.scss',
+'./hero-section.scss',
+'./services-section.scss',
+'./specialists-section.scss',
+'./testimonials-section.scss',
+'./location-directions-section.scss',
+'./quote-section.scss',
+'./contact-section.scss',
+'./phone-section.scss',
+'./footer-section.scss',
+'./copyright.scss';
+
+body {
+    margin: 0;
+}
+
+.color-1 {
+    background-color: $offWhite;
+}
+
+.color-2 {
+    background-color: $offBlack;
+}
+
+.color-3 {
+    background-color: $primaryColor;
+}
+
+.color-4 {
+    background-color: $secondaryColor;
+}
+
+.color-box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: $offWhite;
+}
+
+section {
+    width: 100%;
+    padding: 0 10rem;
+}
+
+
+
+#hero-section {
+    background-color: $primaryColor;
+}
