@@ -5,7 +5,9 @@
 
 // sections
 './top-bar-section.scss',
+'./navbar.scss',
 './hero-section.scss',
+'./intro-section.scss',
 './services-section.scss',
 './specialists-section.scss',
 './testimonials-section.scss',
@@ -15,46 +17,69 @@
 './phone-section.scss',
 './footer-section.scss',
 './copyright.scss';
+;
 
-body {
-    margin: 0;
-}
-
-.color-1 {
-    background-color: $offWhite;
-}
-
-.color-2 {
-    background-color: $offBlack;
-}
-
-.color-3 {
-    background-color: $primaryColor;
-}
-
-.color-4 {
-    background-color: $secondaryColor;
-}
-
-.color-box {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+html * {
+    // outline: .3px solid hotpink;
 }
 
 html {
     font-size: 62.5%;
     background-color: $offWhite;
+    overflow-x: hidden;
+}
+
+body {
+    
 }
 
 section {
     width: 100%;
-    padding: 0 10rem;
+    padding: 0 20vw;
 }
 
+h1, p {
+    letter-spacing: -0.02em;
+}
 
+h1 {
+    font-family: $headerFont;
+    font-size: 5rem;
+    font-weight: 900;
+    color: $offBlack;
+    line-height: 100%;
+    text-align: center;
+    margin: 10rem auto 2rem;
 
-#hero-section {
-    background-color: $primaryColor;
+    span {
+        color: $secondaryColor;
+    }
+}
+
+p {
+    font-size: 2rem;
+    font-family: $paragraphFont;
+    font-weight: 200;
+    text-align: center;
+    color: $offBlack;
+    line-height: 145%;
+}
+
+.tooth-pattern-white {
+    position: absolute;
+    background: url("../img/testimonial-cards/tooth_pattern_white.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    opacity: .1;
+}
+
+.tooth-pattern-blue {
+    position: absolute;
+    background: url("../img/testimonial-cards/tooth_pattern_blue.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    opacity: .1;
+    z-index: -1;
 }
