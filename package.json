@@ -2,8 +2,10 @@
   "name": "dental-clinic",
   "version": "1.0.0",
   "description": "dental clinic site",
+  "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build ./*.html --public-url ./"
   },
   "repository": {
     "type": "git",
